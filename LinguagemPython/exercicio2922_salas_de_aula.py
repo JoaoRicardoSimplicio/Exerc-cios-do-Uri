@@ -12,3 +12,7 @@ while True:
         print(R)
     except EOFError:
         break
+
+
+
+## João Ricardo Simplício Soares ##

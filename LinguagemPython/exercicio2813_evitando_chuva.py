@@ -33,4 +33,4 @@ print(emcasa, noescritorio)
 
 
 
-## Jo„o Ricardo SimplÌcio Soares ##
+## Jo√£o Ricardo Simpl√≠cio Soares ##
