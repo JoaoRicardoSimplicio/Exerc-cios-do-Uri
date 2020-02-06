@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main (){
+    int cont, i, qtd, a, maior = 0, tot = 0;
+    while(scanf("%d", &qtd)!=EOF){
+        char telefones[qtd][200];
+        int nums = 0, atuais = 0;
+
+        for (cont = 0; cont < qtd; cont++){
+            scanf("%s", telefones[cont]);
+
+            maior = 0;
+
+            i = cont - 1;
+
+            for ( ; i >=0; i--){
+
+                atuais = 0;
+
+                for (a = 0; a < strlen(telefones[cont]); a++){
+                    if (telefones[cont][a] != telefones[i][a]){
+                        break;
+                    }
+
+                    atuais+=1;
+                }
+
+                if (atuais > maior){
+                    maior = atuais;
+                }
+            }
+
+            tot+= maior;
+        }
+        printf("%d\n", tot);
+
+        tot = 0;
+    }
+return 0;
+}
+
